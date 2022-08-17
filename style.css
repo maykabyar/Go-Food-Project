@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+*{
+	font-family: 'Ibarra Real Nova', serif;
+}
+
+/* Start Header */
+
+/* Start navbar */
+.navbars{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navitems{
+	transition: all 0.3s;
+}
+
+.navitems:hover{
+	font-weight: bolder;
+	border-bottom: 1px solid #444;
+}
+
+.navbtns{
+	margin-left: 400px;
+}
+
+.custom-shape-divider-bottom-1660141882 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1660141989 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+	z-index: -1;
+}
+
+.custom-shape-divider-top-1660141989 svg {
+    position: relative;
+    display: block;
+    width: calc(176% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1660141989 .shape-fill {
+    fill: #dcf1a2;
+}
+
+/* End Header */
+
+/* Start Menu */
+
+.card{
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.menuhovers{
+	cursor: pointer;
+	white-space: pre-wrap;
+
+	overflow: hidden;
+
+	position: relative;
+} 
+
+.menuhovers img{
+	transition: transform 0.8s;
+}
+
+.pastamenus::before{
+	content: 'CARBONARA PASTA \A ALLE VONGOLE';
+}
+
+.pizzamenus::before{
+	content: 'Superme Pizza \A Large Original Pan';
+}
+
+.breadmenus::before{
+	content: 'TGB Classic \A Veggie Supreme';
+}
+
+.spaghettimenus::before{
+	content: 'Spaghetti in Tomato \A MACARONNES';
+}
+
+.burgermenus::before{
+	content: 'Cheese Burger \A Hawaiian Burger';
+}
+
+.sandwhichmenus::before{
+	content: 'Tuna Sandwhich \A Avocado Sandwhich';
+}
+
+.friesmenus::before{
+	content: 'BBQ Fries \A Double Fries';
+}
+
+.hotdogmenus::before{
+	content: 'Chilli Cheese Dog \A HO-HUM Dog';
+}
+
+.menuhovers::before{
+	font-family: 'Font Awesome 5 Free';
+	width: 100%;
+ 	height: 38%;
+
+ 	background-color: #fff;
+	color: #000;
+	
+	text-align: center;
+	line-height: 2;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transform: translateY(100%);
+	opacity: 0;
+
+	z-index: -1;
+
+	transition: all 0.8s;
+}
+
+.menuhovers:hover::before{
+	transform: translateY(0);
+	opacity: 1;
+	z-index: 1;
+} 
+
+.menuhovers:hover img{
+	transform: scale(1.4);
+}
+
+.btncolor{
+	background: #dcf1a2;
+}
+
+/* End Menu */
+
+/* Start About Us */
+
+.abouts{
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.7)
+	),
+	 url('./img/photo.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* End About Us */
+
+/* Start Services */
+
+.iconbox{
+	padding: 40px 20px;
+	border-radius: 15px;
+	background: #f4f4f4;
+
+	position: relative;
+
+	transition: all .5s ease;
+}
+
+.iconbox:hover{
+	background-color: #f2f2f2;
+	transform: translateY(-10px);
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.serviceicon{
+	background-color: rgb(14, 151, 161);
+	width:70px;	
+	height: 70px;
+	border-radius: 50%;
+	color: #f4f4f4;
+	font-size: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	left: 50%;
+	top: -35px;
+
+	transform: translateX(-35px);
+
+	transition: all 0.5s ease;
+}
+
+.iconbox:hover .serviceicon{
+	background-color: #f8f8f8;
+	border: 1px solid rgb(14, 151, 161);
+	color:rgb(14, 151, 161);
+}
+
+/* End Services */
+
+.customers{
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.7)
+	),
+	 url('./img/photo.jpg');
+	 background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.containers{
+	width: 550px;
+	background: e4e4e4;
+	border-radius: 30px;
+
+	display: flex;
+	align-items: center;
+}
+
